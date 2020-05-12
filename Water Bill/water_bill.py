@@ -78,14 +78,16 @@ def display_info(code, b_reading, e_reading, gallons, bill):
     
     ''')     
     
-    # ================= END OF FUNCTIONS =================
-    
 def valid_reading(meter_reading):
     """
     Returns true if, and only if, meter_reading is
     an integer in the range [0, 999999999], else returns false
     """
-    return str(meter_reading).isdigit() and meter_reading in range(1000000000)    
+    return str(meter_reading).isdigit() and meter_reading in range(1000000000)
+    
+    # ================= END OF FUNCTIONS =================
+    
+    
     
 if(__name__ == "__main__"):
 
